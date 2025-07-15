@@ -1,14 +1,12 @@
+from config import API_KEY
 from flask import Flask, request
 
-import os
 
 from api.time_machine import On_this_day
 from dbs.history import exportJson, deleteHistory
 
 
 app = Flask(__name__)
-
-API_KEY = os.getenv("API_KEY")
 
 
 @app.route('/on_this_day', methods=['POST'])

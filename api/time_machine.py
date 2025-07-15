@@ -1,11 +1,10 @@
 from pathlib import *
 import requests
 import json
-import sys
 import os
 
 
-from backend import API_KEY
+from config import API_KEY
 from dbs.history import writeHistory
 
 
