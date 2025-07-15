@@ -1,0 +1,327 @@
+.card-title {
+  font-family: "PoppinsSemiBold";
+}
+
+.card-subtitle {
+  font-family: "PoppinsMedium";
+}
+
+.card-body {
+  font-family: "PoppinsRegular";
+}
+
+p {
+  font-family: "PoppinsRegular";
+}
+
+.navbar {
+  background-color: #000c22;
+}
+.navbar h1 {
+  margin-top: 0.5em;
+  font-family: "PressStart2PRegular";
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.container-input {
+  font-family: "PoppinsSemiBold";
+  border-radius: 1em;
+  background-color: #303a68;
+  height: 38vh;
+  width: 20vw;
+}
+.container-input Form {
+  padding-top: 3em;
+  padding-left: 0.6em;
+}
+.container-input .selector {
+  width: 8em;
+  display: inline-block;
+  margin-top: 0.4em;
+  margin-left: 0.6em;
+  margin-bottom: 0.6em;
+}
+.container-input .selector-day {
+  margin-top: 0.4em;
+  margin-left: 0.6em;
+  margin-bottom: 0.6em;
+  display: inline-block;
+  width: 5em;
+}
+.container-input .slash {
+  margin-left: 0.2em;
+  font-size: 30px;
+  color: #a3a3a3;
+}
+.container-input .label {
+  background-color: #595b5e;
+  font-size: 15px;
+  margin-top: 0.2em;
+  margin-left: 0.2em;
+  color: #ffffff;
+}
+
+.container-calender {
+  padding-top: 0.6em;
+  border-radius: 0.5em;
+  background-color: #8d919e;
+  height: 30vh;
+  width: 15vh;
+  font-family: "PoppinsBold";
+  font-weight: bold;
+  display: flex;
+  font-size: 45px;
+}
+
+.container-calender p {
+  font-family: "PoppinsBold";
+  text-align: center;
+}
+
+.container-calender .num {
+  border-radius: 0.2em;
+  background-color: #61646d;
+  margin: 0.1em;
+  padding-left: 0.42em;
+  width: 1.5em;
+  display: inline-block;
+}
+.container-calender .num p {
+  text-align: center;
+  color: #fdf3f3;
+  font-size: 55px;
+  align-items: center;
+  display: inline;
+}
+.container-calender .day,
+.container-calender .month {
+  width: 4em;
+}
+.container-calender .year {
+  width: 7.5em;
+}
+
+/* Output CSS */
+.container-output {
+  border-radius: 1em;
+  background-color: #9aa1ab;
+  height: 100vh;
+  width: 65vh;
+  font-family: "PoppinsMedium";
+}
+.loading-container {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  color: #000c22;
+  text-align: center;
+}
+.loading-container p {
+  font-size: 20px;
+  font-family: "PressStart2PRegular";
+}
+
+.loading-container .loading {
+  height: 10em;
+  width: 10em;
+  align-self: center;
+  margin-top: 3em;
+  margin-left: 5em;
+  color: #000c22;
+}
+
+.section-container {
+  border-radius: 1em;
+  padding: 0.5em;
+  height: 91vh;
+  background-color: #cfcccc;
+}
+.container-output .card-img {
+  margin: 3px;
+  border-radius: 0.4em;
+  width: 150px;
+}
+
+.section-container .card {
+  background-color: rgb(238, 238, 238);
+  border-radius: 2em;
+}
+.section-container .card-title {
+  font-size: 25px;
+}
+.container-output p {
+  margin: 0;
+  color: rgb(68, 68, 68);
+}
+
+.nrf-section {
+  font-family: "PoppinsSemiBold";
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* History CSS */
+.container-history {
+  margin: 0.6em;
+  border-radius: 1em;
+  padding: 2em;
+  background-color: #9aa1ab;
+  height: 100vh;
+  font-family: "PoppinsSemiBold";
+}
+.container-history .input-text {
+  height: 88vh;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  border-radius: 2em;
+}
+.container-history .input-text .holiday {
+  height: 20vh;
+  border-radius: 1em;
+}
+.container-history .input-text .card-subtitle {
+  font-size: 23px;
+}
+.container-history .input-text .card-title {
+  font-size: 23px;
+  text-decoration: underline;
+}
+.container-history .input-text .card {
+  background: rgb(240, 240, 240);
+  border-radius: 1em;
+}
+
+.container-history h2 {
+  padding-left: 1em;
+  padding-right: 2em;
+  display: inline-block;
+}
+.container-history button {
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 0;
+}
+
+.footer {
+  border-radius: 0.8em;
+  padding: 0.01em;
+}
+.footer a,
+.footer p {
+  padding-top: 0.1em;
+  margin-left: 1em;
+  margin-top: 0.7em;
+  color: #7d93b4;
+  font-size: 15px;
+  font-family: "PoppinsMedium";
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container-calender .num {
+    font-size: 32px;
+  }
+  .container-input Form {
+    padding-top: 2em;
+    padding-left: 0.6em;
+  }
+  .container-input {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container-calender {
+    font-size: 30px;
+    padding-top: 1.7em;
+  }
+  .container-calender .num {
+    border-radius: 0.2em;
+    background-color: #61646d;
+    margin: 0.1em;
+    padding-left: 0.2em;
+    width: 1em;
+    display: inline-block;
+  }
+  .container-calender .num p {
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    display: inline;
+  }
+  .container-calender .day,
+  .container-calender .month {
+    width: 4.5em;
+  }
+  .container-calender .year {
+    width: 6em;
+  }
+  .container-input Form {
+    margin-left: 5em;
+  }
+  .section-container {
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container-calender {
+    font-size: 30px;
+    padding-top: 1.7em;
+  }
+  .container-calender .num {
+    border-radius: 0.2em;
+    background-color: #61646d;
+    margin: 0.1em;
+    padding-left: 0.2em;
+    width: 1em;
+    display: inline-block;
+  }
+  .container-calender .num p {
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    display: inline;
+  }
+  .container-calender .day,
+  .container-calender .month {
+    width: 4.5em;
+  }
+  .container-calender .year {
+    width: 6em;
+  }
+  .container-calender {
+    height: 23vh;
+    font-size: 27px;
+  }
+  .container-calender .num {
+    font-size: 17px;
+  }
+  .container-input Form {
+    margin-left: 3em;
+  }
+  .container-input .label {
+    font-size: 12px;
+  }
+  .container-input .selector {
+    font-size: 10px;
+    width: 8em;
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-left: 0.6em;
+    margin-bottom: 0.6em;
+  }
+  .container-input .selector-day {
+    font-size: 10px;
+    margin-top: 0.4em;
+    margin-left: 0.6em;
+    margin-bottom: 0.6em;
+    display: inline-block;
+    width: 7em;
+  }
+  .container-input {
+    height: 36vh;
+    width: 20vw;
+  }
+}

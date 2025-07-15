@@ -1,0 +1,53 @@
+{
+  "text": "Princess Elisabeth, Belgian princess",
+  "pages": [
+    {
+      "type": "standard",
+      "title": "Princess_Elisabeth,_Duchess_of_Brabant",
+      "displaytitle": "<span class='mw-page-title-main'>Princess Elisabeth, Duchess of Brabant</span>",
+      "namespace": { "id": 0, "text": 1 },
+      "wikibase_item": "Q830697",
+      "titles": {
+        "canonical": "Princess_Elisabeth,_Duchess_of_Brabant",
+        "normalized": "Princess Elisabeth, Duchess of Brabant",
+        "display": "<span class='mw-page-title-main'>Princess Elisabeth, Duchess of Brabant</span>"
+      },
+      "pageid": 1769364,
+      "thumbnail": {
+        "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Prinses_Elisabeth_op_21_juli_2017.png/276px-Prinses_Elisabeth_op_21_juli_2017.png",
+        "width": 276,
+        "height": 320
+      },
+      "originalimage": {
+        "source": "https://upload.wikimedia.org/wikipedia/commons/2/21/Prinses_Elisabeth_op_21_juli_2017.png",
+        "width": 2473,
+        "height": 2871
+      },
+      "lang": "en",
+      "dir": "ltr",
+      "revision": "1118116603",
+      "tid": "2cfbc870-543d-11ed-8cd5-25133a510d42",
+      "timestamp": "2022-10-25T08:15:20Z",
+      "description": "Belgian princess and heir apparent",
+      "description_source": "local",
+      "content_urls": {
+        "desktop": {
+          "page": "https://en.wikipedia.org/wiki/Princess_Elisabeth%2C_Duchess_of_Brabant",
+          "revisions": "https://en.wikipedia.org/wiki/Princess_Elisabeth%2C_Duchess_of_Brabant?action=history",
+          "edit": "https://en.wikipedia.org/wiki/Princess_Elisabeth%2C_Duchess_of_Brabant?action=edit",
+          "talk": "https://en.wikipedia.org/wiki/Talk:Princess_Elisabeth%2C_Duchess_of_Brabant"
+        },
+        "mobile": {
+          "page": "https://en.m.wikipedia.org/wiki/Princess_Elisabeth%2C_Duchess_of_Brabant",
+          "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Princess_Elisabeth%2C_Duchess_of_Brabant",
+          "edit": "https://en.m.wikipedia.org/wiki/Princess_Elisabeth%2C_Duchess_of_Brabant?action=edit",
+          "talk": "https://en.m.wikipedia.org/wiki/Talk:Princess_Elisabeth%2C_Duchess_of_Brabant"
+        }
+      },
+      "extract": "Princess Elisabeth, Duchess of Brabant is the heir apparent to the Belgian throne. The eldest child of King Philippe and Queen Mathilde, she acquired her position after her grandfather King Albert II abdicated in favour of her father on 21 July 2013.",
+      "extract_html": "<p><b>Princess Elisabeth, Duchess of Brabant</b> is the heir apparent to the Belgian throne. The eldest child of King Philippe and Queen Mathilde, she acquired her position after her grandfather King Albert II abdicated in favour of her father on 21 July 2013.</p>",
+      "normalizedtitle": "Princess Elisabeth, Duchess of Brabant"
+    }
+  ],
+  "year": 2001
+}
