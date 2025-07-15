@@ -2,16 +2,16 @@ import sqlite3
 import json
 from pathlib import Path
 import ast
-import os
 
 
-dbs = os.getcwd() + '/dbs/search_history.sqlite3'
+dbs = 'db/search_history.sqlite3'
 
 # Get search result and read it to the database
 
 
 def writeHistory():
-    datas = json.loads(Path(os.getcwd() + '/data.json').read_text())
+
+    datas = json.loads(Path('db/data.json').read_text())
 
     with sqlite3.connect(dbs) as conn:
         command = 'INSERT INTO search_history VALUES(?,?,?,?,?)'

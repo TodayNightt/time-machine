@@ -7,9 +7,9 @@ from PIL import ImageTk, Image
 import datetime
 
 # Local imports
-from api.time_machine import On_this_day
-import dbs.history as history
-
+from common.api.time_machine import On_this_day
+import common.dbs.history as history
+from config import API_KEY, ASSETS_DIR
 
 # Define all the Initial variables
 clicked = False
@@ -28,8 +28,10 @@ year_drop = list(sorted(range(1500, 2023), reverse=True))
 # Functions
 def update():
     # Update the day img
-    img_d1 = ImageTk.PhotoImage(Image.open(f'date_img/{this_day[0]}.jpg'))
-    img_d2 = ImageTk.PhotoImage(Image.open(f'date_img/{this_day[1]}.jpg'))
+    img_d1 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_day[0]}.jpg'))
+    img_d2 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_day[1]}.jpg'))
     label_d1.config(image=img_d1)
     label_d1.image_names = img_d1
     label_d2.config(image=img_d2)
@@ -37,19 +39,23 @@ def update():
 
     # Update the month img
     img_m1 = ImageTk.PhotoImage(
-        Image.open(f'date_img/{this_month[0]}.jpg'))
+        Image.open(f'{ASSETS_DIR}/date_img/{this_month[0]}.jpg'))
     img_m2 = ImageTk.PhotoImage(
-        Image.open(f'date_img/{this_month[1]}.jpg'))
+        Image.open(f'{ASSETS_DIR}/date_img/{this_month[1]}.jpg'))
     label_m1.config(image=img_m1)
     label_m1.image_names = img_m1
     label_m2.config(image=img_m2)
     label_m2.image_names = img_m2
 
     # Update the year img
-    img_y1 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[0]}.jpg'))
-    img_y2 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[1]}.jpg'))
-    img_y3 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[2]}.jpg'))
-    img_y4 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[3]}.jpg'))
+    img_y1 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[0]}.jpg'))
+    img_y2 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[1]}.jpg'))
+    img_y3 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[2]}.jpg'))
+    img_y4 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[3]}.jpg'))
     label_y1.config(image=img_y1)
     label_y1.image_names = img_y1
     label_y2.config(image=img_y2)
@@ -113,7 +119,7 @@ def history_win():
     history_win.maxsize(400, 500)
     history_win.config(padx=10, pady=10)
     history_win.title('History')
-    history_win.iconbitmap('icon/parchment.ico')
+    history_win.iconbitmap('assets/icon/parchment.ico')
 
     order = ['Date', 'Birth', 'Death', 'Event', 'Holiday']
     text_history = Text(history_win, font=(
@@ -147,6 +153,9 @@ def quit():
 
 
 if __name__ == "__main__":
+    if (API_KEY is None or ASSETS_DIR is None):
+        print("API_KEY and ASSETS_DIR env need to be set!")
+        exit(1)
     # Checks whether today's date is needed when first opening the window
     if not clicked:
         today_date = list(str(datetime.date.today()))
@@ -164,7 +173,7 @@ if __name__ == "__main__":
     root.config(background='#2BA4B8')
     root.minsize(730, 810)
     root.maxsize(730, 910)
-    root.iconbitmap('icon/time-machine.ico')
+    root.iconbitmap(f'{ASSETS_DIR}/icon/time-machine.ico')
     root.title('Time Machine')
     Label(
         root, text='''Scifi icons created by Freepik - Flaticon      https: // www.flaticon.com/free-icons/scifi''',
@@ -188,14 +197,22 @@ if __name__ == "__main__":
     frame_calender.grid(row=0, column=0, columnspan=3, padx=20)
 
     # Default today's image
-    image_d1 = ImageTk.PhotoImage(Image.open(f'date_img/{this_day[0]}.jpg'))
-    image_d2 = ImageTk.PhotoImage(Image.open(f'date_img/{this_day[1]}.jpg'))
-    image_m1 = ImageTk.PhotoImage(Image.open(f'date_img/{this_month[0]}.jpg'))
-    image_m2 = ImageTk.PhotoImage(Image.open(f'date_img/{this_month[1]}.jpg'))
-    image_y1 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[0]}.jpg'))
-    image_y2 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[1]}.jpg'))
-    image_y3 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[2]}.jpg'))
-    image_y4 = ImageTk.PhotoImage(Image.open(f'date_img/{this_year[3]}.jpg'))
+    image_d1 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_day[0]}.jpg'))
+    image_d2 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_day[1]}.jpg'))
+    image_m1 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_month[0]}.jpg'))
+    image_m2 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_month[1]}.jpg'))
+    image_y1 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[0]}.jpg'))
+    image_y2 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[1]}.jpg'))
+    image_y3 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[2]}.jpg'))
+    image_y4 = ImageTk.PhotoImage(Image.open(
+        f'{ASSETS_DIR}/date_img/{this_year[3]}.jpg'))
 
     spacer_3 = Label(frame_calender, text="",
                      font=('Poppins', 15, 'bold'), pady=5)

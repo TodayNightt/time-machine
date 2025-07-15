@@ -3,9 +3,8 @@ import requests
 import json
 import os
 
-
 from config import API_KEY
-from dbs.history import writeHistory
+from common.dbs.history import writeHistory
 
 
 class On_this_day:
@@ -210,4 +209,4 @@ class On_this_day:
         data = [{'date': date,
                  'birth': f'{birth}', 'death': f'{death}', 'event': f'{event}', 'holiday': f'{holiday}'}]
         data_json = json.dumps(data)
-        Path(os.getcwd() + '/data.json').write_text(data_json)
+        Path(os.getcwd() + '/db/data.json').write_text(data_json)

@@ -8,7 +8,7 @@ class History extends Component {
   randomId = (i) => Math.floor(Math.random() * Number(i) * 100);
 
   componentDidMount() {
-    fetch("/show", {
+    fetch("/db/get", {
       method: "GET",
     }).then((response) => {
       response
@@ -18,7 +18,7 @@ class History extends Component {
   }
 
   handleRefresh = () => {
-    fetch("/show", { method: "GET" }).then((response) => {
+    fetch("/db/get", { method: "GET" }).then((response) => {
       response
         .json(response)
         .then((response) => this.setState({ data: response }));
@@ -26,7 +26,7 @@ class History extends Component {
   };
 
   handleClear = async () => {
-    await fetch("/clear", { method: "GET" });
+    await fetch("/db/clear", { method: "GET" });
     this.handleRefresh();
   };
 

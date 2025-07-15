@@ -109,7 +109,7 @@ class App extends Component {
 
   //fetch data from python
   fetchdata = async (date) => {
-    const response = await fetch("/api", {
+    const response = await fetch("/on_this_day", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
