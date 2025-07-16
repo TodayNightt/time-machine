@@ -1,0 +1,10 @@
+services:
+  the-stack:
+    build: .
+    ports:
+      - 80:5000
+    env_file:
+      - ./.env
+    environment:
+      - API_KEY=${API_KEY}
+      - ASSETS_DIR=${ASSETS_DIR:-assets/}
