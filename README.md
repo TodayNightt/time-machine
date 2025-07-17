@@ -1,5 +1,7 @@
 # ⏳ Time Machine
 
+![](./assets/showcase.gif)
+
 **Time Machine** is a web application that transports you back in time.
 
 Choose any date, and you'll discover:
